@@ -4,7 +4,7 @@
     <v-icon :class='[marginClass, colorClass]'>
       {{ icon }}
     </v-icon>
-    {{ text }}
+    <span>{{ text }}</span>
   </v-btn>
 </template>
 

@@ -103,7 +103,7 @@ export const projectDescriptions = {
     },
     {
       title: titles.morseTransmitter,
-      subtitle: 'An <strong>Android application</strong> developed during <a href="https://www.facebook.com/events/1409309589366211">Doom Hack</a>, originally intended to be a morse code transmitter and receiver, but due to technical difficulties, ended up being just a transmitter',
+      subtitle: 'An <strong>Android</strong> application developed during <a href="https://www.facebook.com/events/1409309589366211">Doom Hack</a>, originally intended to be a morse code transmitter and receiver, but due to technical difficulties, ended up being just a transmitter',
       icon: 'fa-lightbulb-o',
       divider: false,
       github: 'https://github.com/Coffeeboys/MorseTranslator',

@@ -9,7 +9,7 @@
       <!-- To remedy this, I added padding to the top of the tabs bar -->
       <!-- Finally, the title needed to be shifted into an ideal place with margins -->
       <v-toolbar flat class="cyan" dark>
-        <v-toolbar-title class='display-3 mt-5 ml-5'>Trevor Clelland</v-toolbar-title>
+        <v-toolbar-title class='title_name mt-5 ml-5'>Trevor Clelland</v-toolbar-title>
         <v-tabs class="pt-4" slot='extension' dark fixed centered>
           <v-tabs-bar slot="activators" class="cyan">
             <v-tabs-slider></v-tabs-slider>
@@ -64,5 +64,25 @@
   }
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0
+  }
+</style>
+
+<!-- Local styling for the app component (toolbar, etc...) -->
+<style scoped>
+  /*For really small screens, use a smaller font size*/
+  /*There might be a better way to do this, but I don't know how...*/
+  /*These hard coded pixel sizes are based off the definition of "xs" sized screens*/
+  /*found here: https://vuetifyjs.com/layout/grid*/
+  @media (max-width:599px) {
+    /*same as Vuetify's display-3 font size*/
+    .title_name {
+      font-size: 32px;
+    }
+  }
+  /*same as Vuetify's display-1 font size*/
+  @media (min-width:600px) {
+    .title_name {
+      font-size: 56px;
+    }
   }
 </style>
