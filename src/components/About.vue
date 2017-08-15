@@ -1,7 +1,8 @@
 <!-- A "page" that talks about who I am -->
 <template>
   <v-layout>
-    <v-flex xs12 sm8 offset-sm2>
+    <!-- extra small fills the whole screen, Small fills most of the screen, medium and up fills just the center of the screen-->
+    <v-flex xs12 sm10 offset-sm1 md8 offset-md2>
       <v-card>
         <img class='img-round img-rescale img-center' width="300px" src='/static/profile_photo.jpg'></img>
         <v-card-text class='subheading'>
@@ -28,10 +29,12 @@
           </p>
         </v-card-text>
         <v-card-actions>
-          <icon-button href="https://github.com/TrevRawr" color="orange" text="GitHub" icon="fa-github"></icon-button>
-          <icon-button href="https://ca.linkedin.com/in/trevor-clelland-00bb35105" color="blue" text="Linked In" icon="fa-linkedin"></icon-button>
-          <icon-button color="red" text="E-mail" icon="fa-comments" href="mailto:***REMOVED***"></icon-button>
-          <icon-button color="deep-purple" text="Resume" icon="fa-file-text" href="/static/resume.html"></icon-button>
+          <v-flex>
+            <icon-button href="https://github.com/TrevRawr" color="orange" text="GitHub" icon="fa-github"></icon-button>
+            <icon-button href="https://ca.linkedin.com/in/trevor-clelland-00bb35105" color="blue" text="Linked In" icon="fa-linkedin"></icon-button>
+            <icon-button color="red" text="E-mail" icon="fa-comments" href="mailto:***REMOVED***"></icon-button>
+            <icon-button color="deep-purple" text="Resume" icon="fa-file-text" href="/static/resume.html"></icon-button>
+          </v-flex>
         </v-card-actions>
       </v-card>
     </v-flex>
