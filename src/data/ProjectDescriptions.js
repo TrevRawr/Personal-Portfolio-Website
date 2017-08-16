@@ -64,6 +64,7 @@ export const projectDescriptions = {
       subtitle: 'The very site you\'re viewing now! Made with <strong>Vue.js</strong> and <strong>Vuetify</strong>',
       icon: 'fa-user',
       divider: false,
+      github: 'https://github.com/TrevRawr/Personal-Portfolio-Website/',
       to: {name: 'ProjectDescription', params: { project: titles.portfolio }},
       about:
         `What better way is there to show people that you're a developer than to develop a website to deliver the message?
