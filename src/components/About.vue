@@ -20,7 +20,7 @@
           </p>
           <p>
             I also have a life outside of Computer Science! My hobbies include mountain biking, skiing, playing guitar, video games, and film making.
-            As with my "hobby" of programming, I'm not very good at keeping my hobbies separate from my work. As a film maker, I worked on a
+            As with my "hobby" of programming, I tend to combine my hobbies with my work. As a film maker, I worked on a
             <a href='https://www.youtube.com/watch?v=cQ3d8Zv0Aa4'>promotional film</a> for a program at SFU. I am also a part of a small group of
             film makers/friends called <a href='http://foxwoodfilms.com/'>Foxwood Films</a>. We primarily produce short films on mountain biking.
           </P>
