@@ -31,6 +31,11 @@ var webpackConfig = merge(baseWebpackConfig, {
     // explained here: https://vuejs-templates.github.io/webpack/prerender.html
     new PrerenderSpaPlugin(
       path.join(__dirname, '../dist'),
+      // this plugin doesn't work properly unless the html5 history api is used to deploy files.
+      // This is easily toggleable in Vue Router, but GitHub Pages doesn't supprt this API, so
+      // the plugin will not work properly there. However, the plugin still seems to generate a
+      // static html page for the root url without the history api, which is probably the most
+      // relevant page to prerender anyways
       [ '/']
     ),
     // http://vuejs.github.io/vue-loader/en/workflow/production.html
