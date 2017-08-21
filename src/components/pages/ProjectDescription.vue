@@ -41,7 +41,7 @@
 </template>
 
 <script>
-  import {projectDescriptions} from '../data/ProjectDescriptions'
+  import {projectDescriptions} from '../../data/ProjectDescriptions'
   import IconButton from '@/components/IconButton'
   export default {
     name: 'project-description',

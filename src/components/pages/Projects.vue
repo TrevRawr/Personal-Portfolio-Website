@@ -17,7 +17,7 @@
 
 <script>
   import ProjectListItem from '@/components/ProjectListItem'
-  import {projectDescriptions} from '../data/ProjectDescriptions'
+  import {projectDescriptions} from '../../data/ProjectDescriptions'
   export default {
     name: 'projects',
     data () {

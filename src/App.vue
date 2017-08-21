@@ -14,10 +14,10 @@
           <v-tabs-bar slot="activators" class="cyan">
             <v-tabs-slider></v-tabs-slider>
             <!-- the to prop uses vue router to fulfill the link -->
-            <v-tabs-item :to="{name: 'About'}">
+            <v-tabs-item :to="aboutRoute">
               About
             </v-tabs-item>
-            <v-tabs-item :to="{name: 'Projects'}">
+            <v-tabs-item :to="projectsRoute">
               Projects
             </v-tabs-item>
             <!-- This tab isn't really a tab, but a link to a static page -->
@@ -39,8 +39,15 @@
 </template>
 
 <script>
+  import * as routes from './router/routes.js'
   export default {
     name: 'app',
+    data: function () {
+      return {
+        aboutRoute: {name: routes.ABOUT},
+        projectsRoute: {name: routes.PROJECTS}
+      }
+    },
     methods: {
       goToResume: function () {
         window.location.href = '/static/resume.html'

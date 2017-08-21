@@ -1,3 +1,5 @@
+import * as routes from '../router/routes.js'
+
 export const titles = {
   renewPass: 'RenewPass',
   chip8: 'Chip-8 Emulator',
@@ -25,7 +27,7 @@ export const projectDescriptions = {
       icon: 'fa-recycle',
       github: 'https://github.com/Coffeeboys/RenewPass',
       googlePlay: 'https://play.google.com/store/apps/details?id=ca.alexland.renewpass&hl=en',
-      to: {name: 'ProjectDescription', params: { project: titles.renewPass }},
+      to: {name: routes.PROJECT_DESCRIPTION, params: { project: titles.renewPass }},
       about:
         `RenewPass is a project founded by my friend Alex Land. When Alex started this project, he had little experience
         working with Android. Luckily for him, I had just finished a work term where I worked exclusively on Android apps.
@@ -39,7 +41,7 @@ export const projectDescriptions = {
       subtitle: 'A basic cross-platform <a href="https://en.wikipedia.org/wiki/CHIP-8">Chip-8</a> emulator developed in <strong>C++</strong> that has unit tests for every cpu opcode',
       icon: 'fa-play',
       github: 'https://github.com/TrevRawr/chip-8',
-      to: {name: 'ProjectDescription', params: { project: titles.chip8 }},
+      to: {name: routes.PROJECT_DESCRIPTION, params: { project: titles.chip8 }},
       about:
         `As a kid, I played lots of my video games on emulators, but I didn't give much thought into how they worked.
         Recently, I tried out a Wii U emulator, <a href="http://cemu.info/">Cemu</a>, and was blown away with how well a
@@ -52,7 +54,7 @@ export const projectDescriptions = {
       title: titles.portalBike,
       subtitle: 'A game built in the <strong>Unity</strong> game engine inspired by Valve\'s <a href="https://en.wikipedia.org/wiki/Portal_(video_game)">Portal</a>, and "Pete\'s" <a href="http://www.onemorelevel.com/game/free_rider_2">Freerider 2</a>',
       icon: 'fa-gamepad',
-      to: {name: 'ProjectDescription', params: { project: titles.portalBike }},
+      to: {name: routes.PROJECT_DESCRIPTION, params: { project: titles.portalBike }},
       about:
         `I built this game a few years back shortly after starting university; it was one of my first attempts at programming
         an application larger than a single file. With that in mind, the code quality is less than optimal. However, it
@@ -65,7 +67,7 @@ export const projectDescriptions = {
       icon: 'fa-user',
       divider: false,
       github: 'https://github.com/TrevRawr/Personal-Portfolio-Website/',
-      to: {name: 'ProjectDescription', params: { project: titles.portfolio }},
+      to: {name: routes.PROJECT_DESCRIPTION, params: { project: titles.portfolio }},
       about:
         `What better way is there to show people that you're a developer than to develop a website to deliver the message?
         The sole purpose in this website is for me to show off to you! Well, that's not entirely true. I also made it to learn.
@@ -84,7 +86,7 @@ export const projectDescriptions = {
       subtitle: 'A web app developed with <strong>React.js</strong> during <a href="https://www.facebook.com/events/223905644725181/?acontext=%7B%22source%22%3A3%2C%22source_newsfeed_story_type%22%3A%22regular%22%2C%22action_history%22%3A%22[%7B%5C%22surface%5C%22%3A%5C%22newsfeed%5C%22%2C%5C%22mechanism%5C%22%3A%5C%22feed_story%5C%22%2C%5C%22extra_data%5C%22%3A[]%7D]%22%2C%22has_source%22%3Atrue%7D&source=3&source_newsfeed_story_type=regular&action_history=[%7B%22surface%22%3A%22newsfeed%22%2C%22mechanism%22%3A%22feed_story%22%2C%22extra_data%22%3A[]%7D]&has_source=1&fref=mentions">Systems Hacks</a>. It helps you find cooking recipes, and reads them out loud to you step-by-step',
       icon: 'fa-cutlery',
       github: 'https://github.com/Coffeeboys/CookingCompanion',
-      to: {name: 'ProjectDescription', params: { project: titles.cookingCompanion }},
+      to: {name: routes.PROJECT_DESCRIPTION, params: { project: titles.cookingCompanion }},
       about:
         `Cooking Companion was developed in less than 12 hours by 4 people, (myself included).
         The theme for this hackathon was "Lifestyle Applications". It was a pretty vague theme, but gave teams
@@ -96,7 +98,7 @@ export const projectDescriptions = {
       subtitle: 'An <strong>Android</strong> application developed during <a href="https://hackentines-3420.devpost.com/">Hackentines</a> that measures your heartbeat using your phone\'s camera, then lets you transmit your heartbeat to loved ones',
       icon: 'fa-heartbeat',
       github: 'https://github.com/Coffeeboys/Heartbeat',
-      to: {name: 'ProjectDescription', params: { project: titles.heartbeat }},
+      to: {name: routes.PROJECT_DESCRIPTION, params: { project: titles.heartbeat }},
       about:
         `Heartbeat was developed in 24 hours by a group of 4 people (myself included). If you didn't guess already, the theme
         for this hackathon was Valentine's day.  My team, the <a href="https://github.com/Coffeeboys">Coffeeboys</a> ended up
@@ -108,7 +110,7 @@ export const projectDescriptions = {
       icon: 'fa-lightbulb-o',
       divider: false,
       github: 'https://github.com/Coffeeboys/MorseTranslator',
-      to: {name: 'ProjectDescription', params: { project: titles.morseTransmitter }},
+      to: {name: routes.PROJECT_DESCRIPTION, params: { project: titles.morseTransmitter }},
       about:
         `Morse Transmitter was developed in 24 hours by the <a href="https://github.com/Coffeeboys">Coffeeboys</a>, a group of 5 people (myself included). This was the first hackathon I ever went to.
         The hackathon was apocalyptic-themed, which inspired many teams to make games (often zombie-related). My team decided to take a
@@ -127,7 +129,7 @@ export const projectDescriptions = {
       Created with <strong>React.js</strong> for the front end and a <strong>Java</strong> web server for the back end`,
       icon: 'fa-trophy',
       github: 'https://github.com/DavidQuong/vrc-ladder',
-      to: {name: 'ProjectDescription', params: { project: titles.vrcLadder }},
+      to: {name: routes.PROJECT_DESCRIPTION, params: { project: titles.vrcLadder }},
       about:
         `This application was developed as part of
         <a href="https://www.sfu.ca/students/calendar/2017/fall/courses/cmpt/373.html">CMPT 373</a> — a project-based software development
@@ -144,7 +146,7 @@ export const projectDescriptions = {
       title: titles.renderer,
       subtitle: 'a 3-D model renderer that renders .obj model files. This was built from the ground up in <strong>C++</strong> starting from a setPixel() method (provided by <a href="https://www.qt.io/">QT</a>) — <strong>NO</strong> OpenGL or any other graphics libraries were used',
       icon: 'fa-keyboard-o',
-      to: {name: 'ProjectDescription', params: { project: titles.renderer }},
+      to: {name: routes.PROJECT_DESCRIPTION, params: { project: titles.renderer }},
       about:
         `<p>
           This application was developed individually as part of <a href="http://www.sfu.ca/students/calendar/2017/spring/courses/cmpt/361.html">CMPT 361</a> — a computer graphics course. This was my first experience with graphics
@@ -174,7 +176,7 @@ export const projectDescriptions = {
       subtitle: 'A web app built using <strong>Django</strong>, <strong>Bootstrap</strong>, and <strong>Vue.js</strong> that allows students to buy and sell used textbooks',
       icon: 'fa-book',
       divider: false,
-      to: {name: 'ProjectDescription', params: { project: titles.textbookMarketplace }},
+      to: {name: routes.PROJECT_DESCRIPTION, params: { project: titles.textbookMarketplace }},
       about:
         `
         <p>
