@@ -4,7 +4,7 @@
     <!-- extra small fills the whole screen, Small fills most of the screen, medium and up fills just the center of the screen-->
     <v-flex xs12 sm10 offset-sm1 md8 offset-md2>
       <v-card>
-        <img class='img-round img-rescale img-center' width="300px" src='/static/profile_photo.jpg'></img>
+        <img class='img-round img-rescale img-center' width="300px" src='../../assets/profile_photo.jpg'></img>
         <v-card-text class='subheading'>
           <p>
             Hello, My name is <strong>Trevor Clelland</strong>. I am a software developer and a student in the
