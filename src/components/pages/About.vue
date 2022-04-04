@@ -32,7 +32,6 @@
           <v-flex>
             <icon-button href="https://github.com/TrevRawr" color="orange" text="GitHub" icon="fa-github"></icon-button>
             <icon-button href="https://ca.linkedin.com/in/trevor-clelland-00bb35105" color="blue" text="Linked In" icon="fa-linkedin"></icon-button>
-            <icon-button color="red" text="E-mail" icon="fa-comments" href="mailto:***REMOVED***"></icon-button>
             <icon-button color="deep-purple" text="Resume" icon="fa-file-text" href="/static/resume.html"></icon-button>
           </v-flex>
         </v-card-actions>
